@@ -10,10 +10,31 @@ function submitAnswers(){
 
   // Validation
   for(i = 1; i<=total; i++){
-    if(eval('q'+i) == null || eval('q+i') == ''){
-      alert('You missed question 1');
+    if(eval('q'+i) == null || eval('q' +i) == ''){
+      alert('You missed question ' + i);
       return false;
     }
   }
 
+  // set correct asnwers
+  var answers = ['b', 'a', 'd', 'b', 'd'];
+
+  // Check the answers
+  if(q1 == answers[0]){
+    score++;
+  }
+  if(q2 == answers[1]){
+    score++;
+  }
+  if(q3 == answers[2]){
+    score++;
+  }
+  if(q4 == answers[3]){
+    score++;
+  }
+  if(q5 == answers[4]){
+    score++;
+  }
+
+  alert('You scored ' + score + ' out of' + total);
 }
