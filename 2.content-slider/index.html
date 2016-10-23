@@ -12,8 +12,12 @@
     <script type="text/javascript">
       $(document).ready(function(){
 
-        $('.myLink').on('click', function(){
-            $('h1').fadeOut(1000);
+        $('.myLink').on('mouseenter', function(){
+            $('h1').slideUp(1000);
+        });
+
+        $('.myLink').on('mouseleave', function(){
+            $('h1').slideDown(1000);
         });
 
 
