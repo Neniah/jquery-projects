@@ -13,11 +13,11 @@
       $(document).ready(function(){
 
         $('.myLink').on('mouseenter', function(){
-            $('h1').slideUp(1000);
+            $('h1').addClass('red');
         });
 
         $('.myLink').on('mouseleave', function(){
-            $('h1').slideDown(1000);
+            $('h1').removeClass('red');
         });
 
 
