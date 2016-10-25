@@ -20,5 +20,8 @@ $(document).ready(function(){
     } else{
       $('.oldActive').next().addClass('active');
     }
+    $('oldActive').removeClass('oldActive');
+    $('.slide').faceOut(speed);
+    $('.active').faceIn(speed);
   });
 });
