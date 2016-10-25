@@ -24,4 +24,16 @@ $(document).ready(function(){
 		$('.slide').fadeOut(speed);
 		$('.active').fadeIn(speed);
   });
+
+  $('#prev').on('click', function(){
+    $('.active').removeClass('active').addClass('oldActive');
+    if($('.oldActive').is(':first-child')){
+      $('.slide').last().addClass('active');
+    } else {
+      $('.oldActive').prev().addClass('active');
+    }
+    $('.oldActive').removeClass('oldActive');
+    $('.slide').fadeOut(speed);
+    $('.active').fadeIn(speed);
+  });
 });
