@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // Set Options
-  var speed = 500;
+  var speed = 1000;
   var autoswitch = true;
   var autoswitch_speed = 4000;
 
@@ -36,4 +36,18 @@ $(document).ready(function(){
     $('.slide').fadeOut(speed);
     $('.active').fadeIn(speed);
   });
+
+  if(autoswitch == true){
+    setInterval(function(){
+      $('.active').removeClass('active').addClass('oldActive');
+  		if($('.oldActive').is(':last-child')){
+  			$('.slide').first().addClass('active');
+  		} else {
+  			$('.oldActive').next().addClass('active');
+  		}
+  		$('.oldActive').removeClass('oldActive');
+  		$('.slide').fadeOut(speed);
+  		$('.active').fadeIn(speed);
+    }, autoswitch_speed);
+  }
 });
