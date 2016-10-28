@@ -53,7 +53,13 @@ function search(){
 
       console.log(data);
 
-      
+      $.each(data.items, function(i, item){
+        // Get Output
+        var output = getOutput(item);
+
+        // Display Results
+        $('#results').append(output),
+      });
 
     }
   );
