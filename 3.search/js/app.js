@@ -4,7 +4,7 @@ $(function(){
   var icon = $('#search-btn');
 
   //Focus Handler
-  $('searchField').on('focus', function(){
+  $(searchField).on('focus', function(){
     $(this).animate({
       width: '100%'
     }, 400);
@@ -14,7 +14,7 @@ $(function(){
   });
 
   // Blur Ever Handler
-  $('searchField').on('blur', function(){
+  $(searchField).on('blur', function(){
     if(searchField.val() == ''){
       $(searchField).animate({
         width:'45%'
