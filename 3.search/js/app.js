@@ -19,6 +19,9 @@ $(function(){
       $(searchField).animate({
         width:'45%'
       },400, function(){});
+      $(icon).animate({
+        right:'360px'
+      },400, function(){});
     }
   });
 
