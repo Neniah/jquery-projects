@@ -64,3 +64,27 @@ function search(){
     }
   );
 }
+
+
+// Build Output
+function getOutput(){
+  var videoId = item.id.videoId;
+  var title = item.snipped.title;
+  var description = item.snipped.description;
+  var thumb = item.snipped.thumbnails.high.url;
+  var channelTitle = item.snippet.channelTitle;
+  var videoDate = item.snipped.publishedAt;
+
+  // Build OutPut String
+  var output = '<li>' +
+  '<div class="list-left">' +
+  '<img src="'+ thumb + '">' +
+  '</div>' +
+  '<div class="list-right">' +
+  '<h3>'+ title +'<h3/>' +
+  '<small>By <span class="cTitle">'+ channelTitle +'</span></small>';
+
+
+
+
+}
