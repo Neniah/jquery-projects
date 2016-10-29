@@ -82,7 +82,14 @@ function getOutput(){
   '</div>' +
   '<div class="list-right">' +
   '<h3>'+ title +'<h3/>' +
-  '<small>By <span class="cTitle">'+ channelTitle +'</span></small>';
+  '<small>By <span class="cTitle">'+ channelTitle +'</span></small>'+
+  '<p>'+ description +'</p>'+
+  '</div>'+
+  '</li>'+
+  '<div class="clearfix"></div>' +
+  '';
+
+  return output;
 
 
 
