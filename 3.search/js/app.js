@@ -58,7 +58,7 @@ function search(){
         var output = getOutput(item);
 
         // Display Results
-        $('#results').append(output),
+        $('#results').append(output);
       });
 
     }
@@ -90,8 +90,5 @@ function getOutput(){
   '';
 
   return output;
-
-
-
 
 }
