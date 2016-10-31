@@ -58,3 +58,9 @@ li.a{
     width:80%;
   }
 }
+
+.rotate{
+  -moz-transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  transform:rotate(90deg);
+}
