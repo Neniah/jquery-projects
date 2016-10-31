@@ -52,3 +52,9 @@ li.a{
   padding:20px;
   display:none;
 }
+
+@media(max-width:900px){
+  .container{
+    width:80%;
+  }
+}
