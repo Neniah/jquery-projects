@@ -46,3 +46,9 @@ h1{
   cursor:pointer;
   padding:20px;
 }
+
+li.a{
+  background: #ddd;
+  padding:20px;
+  display:none;
+}
