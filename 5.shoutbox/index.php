@@ -19,11 +19,13 @@
       </div>
 
       <footer>
-        <form class="" action="index.html" method="post">
+        <form class="form" action="index.html" method="post" >
           <label for="name">Name:</label>
           <input type="text" id="name" value="">
+          <br>
           <label for="">Shout Text</label>
           <input type="text" id="shout" value="">
+          <br>
           <input type="submit" id="submit" value="Shout!!">
         </form>
       </footer>
