@@ -68,5 +68,19 @@ input#name, input#shout{
 }
 
 input#name{
-  
+  width:130px;
+  margin-right: 20px;
+}
+
+input#shout{
+  width:270px;
+
+}
+
+input#submit{
+  padding:5px 50px;
+  border:0;
+  background: #c0392b;
+  color:#fff;
+  cursor:pointer;
 }
