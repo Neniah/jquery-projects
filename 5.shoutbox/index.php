@@ -1,10 +1,6 @@
 <?php
 //Connect to Mysql
-$connection = mysql_connect('localhost', 'root', '', 'shotbox');
-
-if(mysqli_connect_errno()){
-  echo 'Failed to Connect' . mysqli_connect_error();
-}
+include('database.php');
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +24,7 @@ if(mysqli_connect_errno()){
       </div>
 
       <footer>
-        <form class="form" action="index.html" method="post" >
+        <form class="form" action="" method="post" >
           <label for="name">Name:</label>
           <input type="text" id="name" value="">
           <br>
