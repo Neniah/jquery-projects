@@ -2,7 +2,6 @@
 //Connect to Mysql
 include('database.php');
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,7 +9,7 @@ include('database.php');
     <title>Shout Box</title>
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" scr="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </head>
   <body>
     <div class="container">
@@ -24,7 +23,7 @@ include('database.php');
       </div>
 
       <footer>
-        <form class="form" action="" method="post" >
+        <form class="form" action="" method="" >
           <label for="name">Name:</label>
           <input type="text" id="name" value="">
           <br>

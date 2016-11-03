@@ -14,7 +14,7 @@ body{
 .container{
   width:35%;
   min-height: 700px;
-  margin:15% auto;
+  margin:10% auto;
   background: #ecf0f1;
   overflow: auto;
   border: #d35400 1px solid;
@@ -26,7 +26,7 @@ header{
   color:#fff;
   background: #c0392b;
   min-height: 70px;
-  vertical-align: center;
+
 }
 
 
