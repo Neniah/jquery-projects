@@ -22,7 +22,11 @@ $shouts = mysqli_query($myConnection, $query);
       <div id="shouts">
         <ul>
           <?php while($row = mysqli_fetch_assoc($shouts)) :?>
-          <li><?php echo $row['name']?></li>
+          <li>
+            <strong><?php echo $row['name']; ?>:</strong>
+              <?php echo $row['shout'];?>
+              <em>[<?php echo $row['date'];?>]</em>
+          </li>
         <?php endwhile; ?>
         </ul>
       </div>
