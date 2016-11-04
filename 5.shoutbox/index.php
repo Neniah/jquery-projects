@@ -1,6 +1,9 @@
 <?php
 //Connect to Mysql
 include('database.php');
+//Create Select query
+$query = "select * from shouts order by id desc";
+$shouts = mysqli_query($myConnection, $query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,7 +21,9 @@ include('database.php');
       </header>
       <div id="shouts">
         <ul>
-          <li></li>
+          <?php while($row = mysqli_fetch_assoc($shouts)) :?>
+          <li><?php echo $row['name']?></li>
+        <?php endwhile; ?>
         </ul>
       </div>
 
