@@ -23,11 +23,11 @@ include('database.php');
       </div>
 
       <footer>
-        <form class="form" action="" method="" >
+        <form class="form" method="POST" >
           <label for="name">Name:</label>
           <input type="text" id="name" value="">
           <br>
-          <label for="">Shout Text:</label>
+          <label for="shout">Shout Text:</label>
           <input type="text" id="shout" value="">
           <br>
           <input type="submit" id="submit" value="Shout!!">
