@@ -33,7 +33,7 @@ p{
 
 }
 
-.head{
+header{
   background: url(../img/panel.jpg) repeat-x bottom center #fff;
   height: 30px;
   padding-top:10px;
@@ -79,4 +79,30 @@ p{
   list-style:none;
   height:45px;
   overflow: hidden;
+}
+
+#menu li.active, #menu li.active:hover{
+  background: url(../img/active_bg.png) no-repeat;
+
+}
+
+#menu li.active{
+  cursor: default;
+}
+
+.sep{
+  width:2px;
+  background: url(../img/seperator.png) no-repeat right;
+  margin-right: 2px;
+}
+
+#menu li a{
+  display:block;
+  background: url(../img/seperator.png) no-repeat right;
+  height: 35px;
+  padding-top: 10px;
+}
+
+a img{
+  border:none;
 }
