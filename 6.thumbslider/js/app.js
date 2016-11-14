@@ -22,5 +22,10 @@ $(document).ready(function(){
     var pos = $(this).parent().prevAll('.product').length;
 
     $('#slides').stop().animate(marginLeft:-positions[pos]+'px', 450);
+
+    e.preventDefault();
+
+    // Stopping the autoScroll
+    if(!autoScroll) clearInterval(itvl);
   });
 });
