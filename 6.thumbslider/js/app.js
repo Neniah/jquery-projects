@@ -16,6 +16,11 @@ $(document).ready(function(){
 
   $('#menu ul li a').click(function(e, keepScroll){
     $('li.products').removeClass('active').addClass('inactive');
-    //
+    // Add active class to parent
+    $(this).parent().addClass('active');
+
+    var pos = $(this).parent().prevAll('.product').length;
+
+    $('#slides').stop().animate(marginLeft:-positions[pos]+'px', 450);
   });
 });
