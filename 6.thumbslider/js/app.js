@@ -30,17 +30,18 @@ $(document).ready(function(){
   });
 
   // Make first image active
-  $('#menu ul li.product:fist').addClass('active').siblings().addClass('inactive');
+  $('#menu ul li.product:first').addClass('active').siblings().addClass('inactive');
 
   // Auto Scroll
   var current=1;
   function autoScroll(){
-    if(current == 1) return false;
+    if(current == -1) return false;
 
     $('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click', [true]);
-
     current++;
   }
 
   // Duration for autoScroll
+  var duration = 2;
+  var itvl = setInterval(function(){autoScroll()}, duration*1000);
 });
