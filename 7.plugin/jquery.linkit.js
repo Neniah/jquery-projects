@@ -20,8 +20,15 @@
       return this;
     }
 
-    return this.each(fucntion(){
-      
+    return this.each(function(){
+      var object = $(this);
+
+      if(settings.text = null){
+        settings.text = object.text();
+      }
+
+      object.wrap('<a target="'+settings.target+'" href="'+settings.href+'"></a>').text(settings.text);
+
     });
   }
 }(jQuery));
