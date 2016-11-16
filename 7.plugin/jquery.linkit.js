@@ -9,9 +9,19 @@
   $.fn.linkIt = function(options){
     // Default Settings
     var settings = $.extend({
-      whatever : null
+      href: null,
+      text: null,
+      target: '_blank',
     }, options);
 
-    alert(settings.whatever);
+    // Validation
+    if(settings.href == null){
+      console.log('You need as href option for LinkIt for work.');
+      return this;
+    }
+
+    return this.each(fucntion(){
+      
+    });
   }
 }(jQuery));
