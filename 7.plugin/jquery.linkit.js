@@ -5,8 +5,13 @@
 * license: MIT
 */
 
-($function($){
-  $.fn.linkIt = function(){
-    alert(1);
+(function($){
+  $.fn.linkIt = function(options){
+    // Default Settings
+    var settings = $.extend({
+      whatever : null
+    }, options);
+
+    alert(settings.whatever);
   }
 }(jQuery));
