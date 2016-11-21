@@ -95,3 +95,10 @@ section{
   width:100%;
   border-radius: 5px;
 }
+
+footer{
+  background: #03899c;
+  height:55px;
+  color:#fff;
+  padding-top:10px;
+}
